@@ -1,0 +1,11 @@
+{
+  "name": "KalaConnect",
+  "description": "AI-powered virtual business manager and catalog assistant for artisans, weavers, and micro-entrepreneurs.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

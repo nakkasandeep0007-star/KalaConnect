@@ -1,0 +1,42 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // User profile documents
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    
+    // Products collection
+    match /products/{productId} {
+      allow read, write: if true;
+    }
+
+    // Previous Works portfolio collection
+    match /previousWorks/{workId} {
+      allow read, write: if true;
+    }
+
+    // Customer Requests collection
+    match /customerRequests/{requestId} {
+      allow read, write: if true;
+    }
+
+    // Custom Orders collection
+    match /orders/{orderId} {
+      allow read, write: if true;
+    }
+
+    // Conversations collection
+    match /conversations/{convId} {
+      allow read, write: if true;
+    }
+
+    // Buyer Inquiries collection
+    match /inquiries/{inquiryId} {
+      allow read, write: if true;
+    }
+  }
+}
+
